@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- style css hai internal or ek external css bhi hota hai -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(30, 30, 75);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 74px;
+            background-color: rgb(33, 0, 1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 170, 238);
+            font-size: 1.05rem;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            /* margin: 20px 0; */
+
+        }
+
+        .rightSection {
+            font-size: 2rem;
+            margin: 10px 0;
+
+        }
+
+        .rightSection img {
+            width: 130%;
+            background: rgb(152, 152, 214);
+            height: 125%;
+            margin: 55px -80;
+
+        }
+
+        .purple {
+            color: rgb(172, 104, 235);
+        }
+
+        .text-gray {
+            color: gray;
+        
+        }
+
+        #element {
+            color: rgb(172, 104, 235);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .Experience {
+            margin: 30px;
+        }
+
+        main hr {
+            border: 1px solid black;
+            /* border: 0; */
+            background: rgb(142, 142, 230);
+            height: 4.2px;
+            margin: 40px 9px;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        /* .secondsection .vertical {
+            height: 93px;
+            width: 1.5px;
+            background-color: lavender;
+            margin: 0 250px;
+        } */
+        .secondsection .image-top {
+            height: 50px;
+            background-color: black;
+            width: 50px;
+            margin: 44 100px;
+        }
+        .secondsection .text-here{
+            color: gray;
+            margin: 0 40px
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class='left'> Ritik's Portfolio</div>
+            <div class='right'>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <section class='firstSection'>
+                <div class="leftSection">
+                    Hi, My Name is <span class="purple">Ritik </span>.
+                    <div>I am a Python Machine learning and Data science learner.
+                        <!-- Element to contain animated typing -->
+                        <span id="element"></span>
+                    </div>
+
+                </div>
+
+                <div class="rightSection">
+                    <img src="port.png" alt="">
+                </div>
+
+            </section>
+
+            <hr>
+            <section class="secondsection">
+                <span class="text-gray">What I have done so far</span>
+                <h1>Work Experience</h1>
+
+                <div class="box">
+                    <div class="vertical"></div>
+
+                    <div class='vertical-text'>
+                        <img class='image-top' src='python_image.png' alt=''>
+                        <p>Python Development Intern(June-2024)</p>
+
+                        <p>OctaNet Services Pvt ltd</p>
+                        <span class='text-here'>
+                        Built an ATM Python project with functions like random account creation, withdrawal,
+                        transaction history, deposit, transfer, and saving customer data using Pickle module.</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+    </header>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Machine Learning', 'Data Science', 'Ai', 'Computer Vision', 'Data Analytics',],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
